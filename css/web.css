@@ -1,0 +1,49 @@
+body{
+  background: #474747;
+  background: linear-gradient(to top, #222, #6b6b6b) !important;
+}
+
+.web-back a{
+  color: #cecece;
+}
+
+.web-title{
+  margin-top: 60px;
+}
+
+.web-block{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.web-block img{
+  width: 180px;
+  height: 180px;
+}
+.web-block a{
+  text-decoration: none;
+  color: #fff;
+  cursor: url(../img/mouse-hover.png), auto;
+}
+.web-block p{
+  margin-top: 10px;
+  font-size: 16px;
+}
+.web-block:hover{
+  animation: tada 0.3s;
+  animation-duration: 1s;
+}
+
+.web-cover{
+  width: 350px;
+  height: 250px;
+  background-color: #fff;
+}
+
+.footer p{
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 0;
+}

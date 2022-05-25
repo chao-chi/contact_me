@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* written by Yu-Shan Lin */
+body{
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  background: #45484d;
+  background: -moz-radial-gradient(center, ellipse cover, #45484d 0%, #222 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, #45484d 0%, #222 100%);
+  background: radial-gradient(ellipse at center, #45484d 0%, #222 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000', GradientType=1);
+  cursor: url(../img/mouse.png), auto;
+}
+
+.img{
+  width: 30%;
+  margin-left: auto;
+  cursor: url(../img/mouse-hover.png), auto;
+}
+.img-chaochi{
+  position: fixed;
+  width: auto;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  -webkit-filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+  /* animation-delay: 1s; */
+  animation-duration: 1s;
+}
+.img-chaochi.img-chaochi:hover{
+  content: url(../img/chaochi-real.png);
+}
+.img-bg{
+  position: fixed;
+  width: auto;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  z-index: -9;
+  animation-duration: 2s;
+  transition: all 0.3s;
+}
+
+.content{
+  width: 70%;
+  padding: 30px;
+}
+.title{
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  margin: 30px 0;
+  font-family: 'Anton', sans-serif;
+}
+
+.blocks{
+  width: 80%;
+  margin: 0 auto 45px auto;
+}
+.block{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.block img{
+  width: 120px;
+  height: 120px;
+  -webkit-filter: grayscale(100%); /* Safari */
+  filter: grayscale(100%);
+  transition: all 0.4s;
+}
+.block:hover img{
+  -webkit-filter: grayscale(0%); /* Safari */
+  filter: grayscale(0%);
+}
+.block a{
+  text-decoration: none;
+  color: #cecece;
+  transition: all 0.4s;
+  cursor: url(../img/mouse-hover.png), auto;
+}
+.block p{
+  margin-top: 10px;
+  font-size: 16px;
+}
+.block:hover{
+  animation: tada 0.3s;
+  animation-duration: 1s;
+}
+.block:hover a{
+  color: #fff;
+}
+
+.business_card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.business_card img{
+  width: 20rem;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  -webkit-filter: grayscale(100%); /* Safari */
+  filter: grayscale(100%);
+  transition: all 0.4s;
+  cursor: url(../img/mouse-hover.png), auto;
+}
+.business_card img:hover{
+  -webkit-filter: grayscale(0%); /* Safari */
+  filter: grayscale(0%);
+  animation: tada 0.3s;
+  animation-duration: 1s;
+}
+.business_card p{
+  color: #cecece;
+}
+
+.footer p{
+  text-align: center;
+  background-color: #222;
+  bottom: 0;
+  position: relative;
+  z-index: 99;
+  width: 100%;
+  padding: 10px;
+  color: #F0F2F5;
+}
+
+#dvd{
+  width: 304px;
+  height: 64px;
+  position: fixed;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?40j60e');
+  src:  url('../fonts/icomoon.eot?40j60e#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?40j60e') format('truetype'),
+    url('../fonts/icomoon.woff?40j60e') format('woff'),
+    url('../fonts/icomoon.svg?40j60e#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo:before {
+  content: "\e900";
+  font-size: 64px;
+}
+
+.back{
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  margin: 0;
+  transition: all 0.3s;
+}
+.back a{
+  color: #666;
+  text-decoration: none;
+  cursor: url(../img/mouse-hover.png), auto;
+}
+.back:hover{
+  left: 40px;
+}

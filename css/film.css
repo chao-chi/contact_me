@@ -1,0 +1,47 @@
+body{
+  background: #fff;
+}
+
+.film{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to left, #fff, #fff 60%, rgba(0,0,0,0) 90%) !important;
+  padding-left: 40%;
+  padding-top: 30px;
+  text-align: center;
+}
+.film-title{
+  color: #000;
+  margin-top: 30px; 
+}
+.film-block video{
+  width: 200px;
+}
+.film-bg{
+  position: fixed;
+  z-index: -9;
+  width: 60%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transform: translateX(-10%);
+  background-image: url(../img/film-bg.jpeg);
+  background-size: cover;
+  background-position: left bottom;
+  opacity: 0;
+  transition: all 1s;
+}
+.film-bg.fadeIn{
+  opacity: 1;
+}
+
+.footer p{
+  background-color: #222;
+  text-align: center;
+}
+
+.icon-logo:before {
+  content: "\e900";
+  font-size: 64px;
+  color: #000;
+}
