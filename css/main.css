@@ -78,11 +78,12 @@ body{
   width: auto;
   height: 100vh;
   right: 0;
-  top: 0;
+  bottom: 0;
   -webkit-filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
   /* animation-delay: 1s; */
   animation-duration: 1s;
+  background-repeat: no-repeat;
 }
 .img-chaochi.img-chaochi:hover{
   content: url(../img/chaochi-real.png);
@@ -92,21 +93,41 @@ body{
   width: auto;
   height: 100vh;
   right: 0;
-  top: 0;
+  bottom: 0;
   z-index: -9;
   animation-duration: 2s;
   transition: all 0.3s;
 }
+@media (max-width:768px) {
+  .img-chaochi, .img-bg{
+    height: 80vh;
+    right: -10%;
+  }
+}
 
 .content{
   width: 70%;
+  min-height: calc(100vh - 36px);
   padding: 30px;
+}
+@media (max-width:375px) {
+  .content{
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    animation-duration: 4s;
+  }
+  .content::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+  }
 }
 .title{
   color: #fff;
   text-align: center;
   font-size: 32px;
-  margin: 30px 0;
+  margin-bottom: 30px;
   font-family: 'Anton', sans-serif;
 }
 
@@ -118,6 +139,7 @@ body{
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 30px;
 }
 .block img{
   width: 120px;
@@ -154,7 +176,8 @@ body{
   align-items: center;
 }
 .business_card img{
-  width: 20rem;
+  max-width: 20rem;
+  width: 100%;
   margin-bottom: 10px;
   border-radius: 15px;
   -webkit-filter: grayscale(100%); /* Safari */
@@ -175,17 +198,19 @@ body{
 .footer p{
   text-align: center;
   background-color: #222;
-  bottom: 0;
   position: relative;
   z-index: 99;
   width: 100%;
   padding: 10px;
   color: #F0F2F5;
 }
+@media (max-width:375px) {
+  .footer p{
+    font-size: 12px;
+  }
+}
 
 #dvd{
-  width: 304px;
-  height: 64px;
   position: fixed;
 }
 
@@ -219,6 +244,11 @@ body{
   content: "\e900";
   font-size: 64px;
 }
+@media (max-width:375px) {
+  .icon-logo:before {
+    font-size: 32px;
+  }
+}
 
 .back{
   position: fixed;
@@ -231,7 +261,13 @@ body{
   color: #666;
   text-decoration: none;
   cursor: url(../img/mouse-hover.png), auto;
+  transition: all 0.3s;
 }
 .back:hover{
   left: 40px;
+}
+@media (max-width:375px) {
+  .back{
+    font-size: 24px;
+  }
 }
