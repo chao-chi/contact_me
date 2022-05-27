@@ -8,7 +8,6 @@ body{
 
 .film{
   width: 100%;
-  min-height: 100vh;
   background: linear-gradient(to left, #fff, #fff 60%, rgba(0,0,0,0) 90%) !important;
   padding: 30px 0 30px 40%;
   text-align: center;
@@ -16,6 +15,9 @@ body{
 .film-title{
   color: #000;
   margin-top: 30px; 
+}
+.film-block{
+  margin-bottom: 30px;
 }
 .film-block iframe{
   width: 560px;

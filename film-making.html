@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/film.css">
 </head>
-<body>
+<body oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false' onmouseup='document.selection.empty()'>
   <div id="dvd">
     <span aria-hidden="true" class="icon-logo"></span>
   </div>
@@ -19,20 +19,31 @@
     <a href="index.html">&lt BACK</a>
   </div>
   <div class="film-bg"></div>
+  <div class="film">
+    <h1 class="title film-title">Video TOP 3</h1>
+    <div class="animate__animated animate__bounceInRight">
+      <div class="film-block">
+        <iframe src="https://www.youtube.com/embed/a7rfdmkaT7A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="film-block">
+        <iframe src="https://www.youtube.com/embed/B3wOuqwZ_84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="film-block">
+        <iframe src="https://www.youtube.com/embed/ZvGBaQqAwfM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        <h2 class="film-title"></h2>
+      </div>
+    </div>
   </div>
   <div class="film">
-    <h1 class="title film-title">Film Making TOP 3</h1>
+    <h1 class="title film-title">B-Roll TOP 3</h1>
     <div class="animate__animated animate__bounceInRight">
       <div class="film-block">
         <iframe src="https://www.youtube.com/embed/1iMldFxV5sY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h2 class="film-title"></h2>
       </div>
       <div class="film-block">
-        <iframe src="https://www.youtube.com/embed/iGlOc3RGp9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>          <h2 class="film-title"></h2>
+        <iframe src="https://www.youtube.com/embed/iGlOc3RGp9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="film-block">
         <iframe src="https://www.youtube.com/embed/5SE4UZCBzJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <h2 class="film-title"></h2>
       </div>
     </div>
   </div>
