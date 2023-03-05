@@ -32,7 +32,7 @@ var box = document.getElementById('dvd'),
   speed = 4,
   timeout = null;
 
-  console.log(document.querySelector('#dvd span').offsetWidth)
+  // console.log(document.querySelector('#dvd span').offsetWidth)
 init();
 
 // reset constraints on resize
