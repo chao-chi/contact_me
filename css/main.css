@@ -85,9 +85,9 @@ body{
   animation-duration: 1s;
   background-repeat: no-repeat;
 }
-.img-chaochi.img-chaochi:hover{
+/* .img-chaochi.img-chaochi:hover{
   content: url(../img/chaochi-real.png);
-}
+} */
 .img-bg{
   position: fixed;
   width: auto;
