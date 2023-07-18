@@ -7,6 +7,11 @@ body{
   padding-top: 20vh;
   min-height: 100vh;
 }
+@media(max-width:1140px) {
+  .web{
+    padding-top: 60px;
+  }
+}
 
 .web-title{
   margin-bottom: 60px;
@@ -87,7 +92,7 @@ body{
 .web-block:hover .web-logo{
   opacity: 0;
 }
-@media (max-width:375px){
+@media (max-width:576px){
   .web-block{
     min-width: 250px;
     width: 100%;

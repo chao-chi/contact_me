@@ -5,59 +5,149 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-*,*::before,*::after{
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* written by Yu-Shan Lin */
-body{
+body {
   overflow-x: hidden;
   width: 100%;
   min-height: 100vh;
@@ -65,16 +155,17 @@ body{
   background: -moz-radial-gradient(center, ellipse cover, #45484d 0%, #222 100%);
   background: -webkit-radial-gradient(center, ellipse cover, #45484d 0%, #222 100%);
   background: radial-gradient(ellipse at center, #45484d 0%, #222 100%);
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000', GradientType=1);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#45484d', endColorstr='#000000', GradientType=1);
   cursor: url(../img/mouse.png), auto;
 }
 
-.img{
+.img {
   width: 30%;
   margin-left: auto;
   cursor: url(../img/mouse-hover.png), auto;
 }
-.img-chaochi{
+
+.img-chaochi {
   position: fixed;
   width: auto;
   height: 100vh;
@@ -86,10 +177,11 @@ body{
   animation-duration: 1s;
   background-repeat: no-repeat;
 }
+
 /* .img-chaochi.img-chaochi:hover{
   content: url(../img/chaochi-real.png);
 } */
-.img-bg{
+.img-bg {
   position: fixed;
   width: auto;
   height: 100vh;
@@ -99,35 +191,73 @@ body{
   animation-duration: 2s;
   transition: all 0.3s;
 }
+
+@media (max-width:1140px) {
+
+  .img-chaochi,
+  .img-bg {
+    /* height: 90vh; */
+    right: -10%;
+  }
+}
+
 @media (max-width:768px) {
-  .img-chaochi, .img-bg{
+
+  .img-chaochi,
+  .img-bg {
     height: 80vh;
     right: -10%;
   }
 }
 
-.content{
+@media (max-width: 576px) {
+  .img-chaochi {
+    display: none;
+  }
+}
+
+.content {
   width: 70%;
   min-height: calc(100vh - 36px);
   padding: 30px;
 }
-.content p{
-  font-family: "Roboto Slab",serif;
+
+.content p {
+  font-family: "Roboto Slab", serif;
 }
-@media (max-width:375px) {
-  .content{
+
+@media (max-width:576px) {
+  .content {
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
+    /* background-color: rgba(0,0,0,0.5); */
     animation-duration: 4s;
   }
-  .content::after{
+
+  .content::after {
     content: '';
     height: 100%;
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
+    /* background-color: rgba(0,0,0,0.5); */
   }
 }
-.title{
+
+.mobile-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width:576px) {
+  .mobile-bg {
+    display: block;
+  }
+}
+
+.title {
   color: #fff;
   text-align: center;
   font-size: 32px;
@@ -135,87 +265,144 @@ body{
   font-family: 'Anton', sans-serif;
 }
 
-.blocks{
+.blocks {
   width: 80%;
   margin: 0 auto 45px auto;
 }
-.block{
+
+.block {
   display: flex;
   flex-direction: column;
   text-align: center;
   margin-bottom: 30px;
 }
-.block img{
+
+.block img {
   width: 120px;
   height: 120px;
-  -webkit-filter: grayscale(100%); /* Safari */
+  -webkit-filter: grayscale(100%);
+  /* Safari */
   filter: grayscale(100%);
   transition: all 0.4s;
 }
-.block:hover img{
-  -webkit-filter: grayscale(0%); /* Safari */
+
+.block:hover img {
+  -webkit-filter: grayscale(0%);
+  /* Safari */
   filter: grayscale(0%);
 }
-.block a{
+
+.block a {
   text-decoration: none;
   color: #cecece;
   transition: all 0.4s;
   cursor: url(../img/mouse-hover.png), auto;
 }
-.block p{
+
+.block p {
   margin-top: 10px;
   font-size: 16px;
 }
-.block:hover{
+
+.block:hover {
   animation: tada 0.3s;
   animation-duration: 1s;
 }
-.block:hover a{
+@media(max-width:992px){
+  .block:hover {
+    animation: none;
+    /* animation-duration: 1s; */
+  }
+}
+
+.block:hover a {
   color: #fff;
 }
 
-.business_card{
+.business_card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.business_card img{
+
+.business_card a{
+  display: block;
+}
+
+.business_card img {
   /* max-width: 20rem; */
   width: 100%;
   /* height: 200px; */
   margin-bottom: 10px;
   border-radius: 15px;
-  -webkit-filter: grayscale(100%); /* Safari */
+  -webkit-filter: grayscale(100%);
+  /* Safari */
   filter: grayscale(100%);
   transition: all 0.4s;
   cursor: url(../img/mouse-hover.png), auto;
 }
-.business_card img:hover{
-  -webkit-filter: grayscale(0%); /* Safari */
+
+.business_card img:hover {
+  -webkit-filter: grayscale(0%);
+  /* Safari */
   filter: grayscale(0%);
   animation: tada 0.3s;
   animation-duration: 1s;
 }
-.business_card_2023 > div{
-  gap: 10px;
-}
-.business_card_2023 img{
-  width: 36.5%;
-  -webkit-filter: grayscale(100%) brightness(0.8); /* Safari */
+
+.business_card_2023 img {
+  display: block;
+  width: 80%;
+  -webkit-filter: grayscale(100%) brightness(0.8);
+  /* Safari */
   filter: grayscale(100%) brightness(0.8);
 }
-.business_card_2023 img:hover{
-  -webkit-filter: grayscale(0%) brightness(1); /* Safari */
+.business_card_2023 .mla{
+  margin-left: auto;
+}
+
+.business_card_2023 img:hover {
+  -webkit-filter: grayscale(0%) brightness(1);
+  /* Safari */
   filter: grayscale(0%) brightness(1);
 }
-.business_card p{
+
+.business_card p {
   color: #cecece;
 }
 
-.footer{
+@media(max-width:1140px) {
+  .business_card {
+    margin-bottom: 30px;
+  }
+
+  .business_card img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 60%;
+  }
+
+  .business_card_2023 img {
+    width: 60%;
+  }
+}
+@media(max-width:768px) {
+  .business_card img {
+    width: 80%;
+  }
+}
+
+@media(max-width:576px) {
+  .business_card img {
+    width: 100%;
+  }
+}
+
+
+.footer {
   text-align: center;
   background-color: #222;
-  font-family: "Roboto Slab",serif;
+  font-family: "Roboto Slab", serif;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -224,27 +411,34 @@ body{
   padding: 10px;
   color: #F0F2F5;
 }
-.footer ul{
+
+.footer ul {
   max-width: 1200px;
   margin: 0 auto;
 }
-.footer a{
+
+.footer a {
   color: #FFD735;
 }
-@media (max-width:375px) {
-  .footer{
+
+.footer p{
+  margin-top: 30px;
+}
+
+@media (max-width:576px) {
+  .footer {
     font-size: 12px;
   }
 }
 
-#dvd{
+#dvd {
   position: fixed;
 }
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?40j60e');
-  src:  url('../fonts/icomoon.eot?40j60e#iefix') format('embedded-opentype'),
+  src: url('../fonts/icomoon.eot?40j60e');
+  src: url('../fonts/icomoon.eot?40j60e#iefix') format('embedded-opentype'),
     url('../fonts/icomoon.ttf?40j60e') format('truetype'),
     url('../fonts/icomoon.woff?40j60e') format('woff'),
     url('../fonts/icomoon.svg?40j60e#icomoon') format('svg');
@@ -253,7 +447,8 @@ body{
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -271,30 +466,37 @@ body{
   content: "\e900";
   font-size: 64px;
 }
-@media (max-width:375px) {
+
+@media (max-width:768px) {
   .icon-logo:before {
     font-size: 32px;
   }
 }
 
-.back{
+.back {
   position: absolute;
   left: 20px;
   top: 20px;
   margin: 0;
   transition: all 0.3s;
 }
-.back a{
+
+.back a {
   color: #666;
   text-decoration: none;
   cursor: url(../img/mouse-hover.png), auto;
   transition: all 0.3s;
 }
-.back:hover{
+
+.back:hover {
   left: 40px;
 }
-@media (max-width:375px) {
-  .back{
+
+@media (max-width:576px) {
+  .back {
     font-size: 24px;
+  }
+  #dvd {
+    display: none;
   }
 }

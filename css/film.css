@@ -64,7 +64,7 @@ body{
     left: -30%;
   }
 }
-@media (max-width:375px) {
+@media (max-width:576px) {
   .film{
     background: rgba(255,255,255,0.5) !important;
     padding: 30px 10px;
