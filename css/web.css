@@ -4,8 +4,12 @@ body{
 }
 
 .web{
-  padding-top: 60px;
+  padding-top: 20vh;
   min-height: 100vh;
+}
+
+.web-title{
+  margin-bottom: 60px;
 }
 
 .web-back a{
@@ -107,6 +111,7 @@ body{
   margin-bottom: 60px;
   line-height: 24px;
   text-align: center;
+  font-family: "Roboto Slab",serif;
 }
 
 .footer p{

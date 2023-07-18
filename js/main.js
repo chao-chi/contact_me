@@ -159,3 +159,5 @@ function setStyle(element, properties) {
   }
   element.style.cssText += css;
 }
+
+// footer
