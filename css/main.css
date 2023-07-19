@@ -474,7 +474,7 @@ body {
 }
 
 .back {
-  position: absolute;
+  position: fixed;
   left: 20px;
   top: 20px;
   margin: 0;
