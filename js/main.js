@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  alert(`建議使用電腦瀏覽網頁，以獲得最佳使用者體驗。`);
+
   let i = 1;
   $('#img').html('<img id="img-chaochi" class="animate__animated animate__flash img-chaochi" src="img/chaochi-1.png" alt=""><img class="animate__animated animate__pulse img-bg" src="img/bg-1.png" alt="">')
   i++
