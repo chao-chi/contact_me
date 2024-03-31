@@ -39,6 +39,9 @@ body{
 .film-bg.fadeIn{
   opacity: 1;
 }
+.film-last{
+  margin-bottom: 56px;
+}
 @media (max-width:1024px) {
   .film-block iframe{
     width: 400px;
@@ -78,6 +81,9 @@ body{
     width: 100%;
     left: 0;
     background-position: center bottom;
+  }
+  .film-last{
+    margin-bottom: 48px;
   }
 }
 
