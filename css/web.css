@@ -124,6 +124,13 @@ body{
   font-family: "Roboto Slab",serif;
 }
 
+.web-btn{
+  background-color: #e1e3e6;
+}
+.web-btn:hover{
+  background-color: #c5c7ca;
+}
+
 .footer p{
   margin-top: 30px;
   text-align: center;
